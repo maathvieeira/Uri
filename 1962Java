@@ -1,0 +1,25 @@
+import java.util.*;
+
+public class Main {
+
+    
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        
+        int i, entrada, num, num2, ano;
+        
+        entrada = in.nextInt();
+        
+        for(i=0; i<entrada; i++){
+            num = in.nextInt();
+            if(num<2015){
+                ano = 2015 - num;
+                System.out.printf("%d D.C.\n", ano);
+            } else {
+                ano = 2014 - num;
+                System.out.printf("%d A.C.\n", ano*-1);
+            }
+        }
+    }
+    
+}
