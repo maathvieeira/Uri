@@ -1,0 +1,23 @@
+import java.util.*;
+
+public class Main {
+
+    
+    public static void main(String[] args) {
+        Scanner input;
+        input = new Scanner (System.in);
+        
+        String nome = input.nextLine();
+        double salfixo = input.nextDouble();
+        double totalvendas = input.nextDouble();
+        double soma;
+        
+        
+        soma = totalvendas * 15 / 100 + salfixo;
+        
+        System.out.printf("TOTAL = R$ %.2f\n", soma);
+        
+        
+    }
+    
+}
