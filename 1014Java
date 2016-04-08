@@ -1,0 +1,16 @@
+import java.util.*;
+
+public class Main {
+
+    
+    public static void main(String[] args) {
+        Scanner input;
+        input = new Scanner(System.in);
+        
+        int x = input.nextInt();
+        float y = input.nextFloat();
+        
+        System.out.printf("%.3f km/l\n", x/y);
+    }
+    
+}
