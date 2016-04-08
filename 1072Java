@@ -1,0 +1,27 @@
+import java.util.*;
+
+public class Main {
+
+    
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        
+        int i, num, num1, n = 0, m = 0;
+        
+        num = entrada.nextInt();
+        
+        for(i=0; i<num; i++){
+            num1 = entrada.nextInt();
+            
+            if(num1>=10 && num1<=20){
+                n++;
+                
+            }  else{
+                m++;
+            }
+            
+        }
+        System.out.printf("%d in\n", n);
+        System.out.printf("%d out\n", m);
+    }   
+}
