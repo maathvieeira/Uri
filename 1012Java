@@ -1,0 +1,33 @@
+import java.util.*;
+
+public class Main {
+
+    
+    public static void main(String[] args) {
+        Scanner input;
+        input = new Scanner(System.in);
+        
+        float A = input.nextFloat();
+        float B = input.nextFloat();
+        float C = input.nextFloat();
+        double soma1;
+        double soma2;
+        double soma3;
+        double soma4;
+        double soma5;
+        
+        
+        soma1 = A*C/2;
+        soma2 = 3.14159*C*C;
+        soma3 = ((A+B)*C)/2;
+        soma4 = B*B;
+        soma5 = A*B;
+        
+        System.out.printf("TRIANGULO: %.3f\n", soma1);
+        System.out.printf("CIRCULO: %.3f\n", soma2);
+        System.out.printf("TRAPEZIO: %.3f\n", soma3);
+        System.out.printf("QUADRADO: %.3f\n", soma4);
+        System.out.printf("RETANGULO: %.3f\n", soma5);
+    }
+    
+}
