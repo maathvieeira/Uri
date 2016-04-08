@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class Main {
+
+    
+    public static void main(String[] args) {
+        Scanner input;
+        input = new Scanner(System.in);
+        
+        double peso1 = 3.5;
+        double peso2 = 7.5;
+        double nota1 = input.nextDouble();
+        double nota2 = input.nextDouble();
+        double media;
+        
+        media = (peso1*nota1 + peso2*nota2)/11;
+        
+        System.out.printf("MEDIA = %.5f\n", media);
+    }
+    
+}
