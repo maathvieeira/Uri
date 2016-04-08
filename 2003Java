@@ -1,0 +1,33 @@
+import java.io.*;
+
+public class Main {
+
+    
+    public static void main(String[] args) throws IOException {
+        BufferedReader teclado = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter out = new BufferedWriter(new OutputStreamWriter(System.out));
+
+        while(true){
+        String linha = teclado.readLine();
+        if(linha==null || linha.equals(" ") ){
+            break;
+        }
+        String[] partes = linha.split(":");
+        int horaMinuto = Integer.parseInt(partes[0])*60;
+        int minuto = Integer.parseInt(partes[1]);
+        int tempoTotal = horaMinuto + minuto + 60;
+        
+        if(tempoTotal>480){
+            out.write("Atraso maximo: "+(tempoTotal - 480));
+            out.newLine();
+        } else {
+            out.write("Atraso maximo: 0");
+            out.newLine();
+        }
+        out.flush();
+        }
+        
+    }
+    
+        
+    }
