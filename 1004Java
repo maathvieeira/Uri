@@ -1,0 +1,19 @@
+import java.util.*;
+
+public class Main {
+
+    
+    public static void main(String[] args) {
+        Scanner input;
+        input = new Scanner(System.in);
+        
+        int A = input.nextInt();
+        int B = input.nextInt();
+        int soma;
+        
+        soma = A*B;
+        
+        System.out.println("PROD = "+soma);
+    }
+    
+}
