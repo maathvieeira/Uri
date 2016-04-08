@@ -1,0 +1,47 @@
+import java.io.*;
+
+public class Main {
+
+    
+    public static void main(String[] args) throws IOException {
+        BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter out = new BufferedWriter(new OutputStreamWriter(System.out));
+        
+        while(true){
+            String linha = entrada.readLine();
+            if(linha == null || linha.equals(" ")){
+                break;
+            } 
+            
+            int a = Integer.parseInt(linha);
+            int velmax = 0;
+
+            for(int i=0; i<a; i++)  {
+            
+                linha = entrada.readLine();
+
+                int b = Integer.parseInt(linha);
+
+                
+                if(velmax<b){
+                    velmax=b;
+                }
+            }
+            
+            if(velmax<10){
+                System.out.printf("1\n");
+                break;
+            } else if (velmax>=10 && velmax<20){
+                System.out.printf("2\n");
+                break;
+            } else if (velmax>=20){
+                System.out.printf("3\n");
+                break;
+            }
+            
+        }  
+            
+        }
+        
+    }
+    
