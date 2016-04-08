@@ -1,0 +1,32 @@
+import java.io.*;
+
+public class Main {
+
+    
+    public static void main(String[] args) throws IOException {
+        BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter out = new BufferedWriter(new OutputStreamWriter(System.out));
+       
+        
+        while(true){
+            String linha = entrada.readLine();
+            if(linha==null || linha.equals(" ")){
+                break;
+            }
+            
+            int N = Integer.parseInt(linha);
+            
+            if(N<=0){
+                out.write("vai ter copa!");
+                out.newLine();
+            } else if (N>0) {
+                out.write("vai ter duas!");
+                out.newLine();
+            }
+            out.flush();
+        }
+        
+        
+    }
+    
+}
