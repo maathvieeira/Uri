@@ -1,0 +1,22 @@
+import java.util.*;
+
+public class Main {
+
+    
+    public static void main(String[] args) {
+        Scanner input;
+        input = new Scanner(System.in);
+        
+        int number = input.nextInt();
+        int horastrab = input.nextInt();
+        double porhora = input.nextDouble();
+        double mult;
+        
+        mult = horastrab*porhora;
+        
+        System.out.println("NUMBER = "+number);
+        System.out.printf("SALARY = U$ %.2f\n",mult);
+        
+    }
+    
+}
