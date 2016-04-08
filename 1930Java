@@ -1,0 +1,26 @@
+import java.io.*;
+
+public class Main {
+
+    
+    public static void main(String[] args) throws IOException {
+        BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter out = new BufferedWriter(new OutputStreamWriter(System.out));
+        
+        int soma;
+        String linha = entrada.readLine();
+        
+        String[] partes = linha.split(" ");
+        int t1 = Integer.parseInt(partes[0]);
+        int t2 = Integer.parseInt(partes[1]);
+        int t3 = Integer.parseInt(partes[2]);
+        int t4 = Integer.parseInt(partes[3]);
+        
+        soma = t1+t2+t3+t4-3;
+        
+        System.out.printf("%d\n", soma);
+        
+        
+    }
+    
+}
