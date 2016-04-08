@@ -1,0 +1,20 @@
+import java.util.*;
+
+public class Main {
+
+    
+    public static void main(String[] args) {
+        Scanner input;
+        input = new Scanner (System.in);
+        
+        double A = input.nextDouble();
+        double B = input.nextDouble();
+        double C = input.nextDouble();
+        double notafinal;
+        
+        notafinal = (2*A + 3*B + 5*C)/10;
+        
+        System.out.printf("MEDIA = %.1f\n", notafinal);
+    }
+    
+}
