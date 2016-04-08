@@ -1,0 +1,36 @@
+import java.util.*;
+
+public class Main {
+
+    
+    public static void main(String[] args) {
+        Scanner input;
+        input = new Scanner(System.in);
+        
+        double valorpeca1;
+        double valorpeca2;
+        int cod1;
+        int cod2;
+        int numpecas;
+        int numpecas2;
+        double soma1;
+        double soma2;
+        double soma3;
+        
+        cod1 = input.nextInt();
+        numpecas = input.nextInt();
+        valorpeca1 = input.nextDouble();
+        
+        cod2 = input.nextInt();
+        numpecas2 = input.nextInt();
+        valorpeca2 = input.nextDouble();
+        
+        soma1 = numpecas * valorpeca1;
+        soma2 = numpecas2 * valorpeca2;
+        
+        soma3 = soma1 + soma2;
+        
+        System.out.printf("VALOR A PAGAR: R$ %.2f\n", soma3);
+    }
+    
+}
