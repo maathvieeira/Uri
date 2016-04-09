@@ -1,0 +1,33 @@
+import java.io.*;
+
+public class Main {
+
+    
+    public static void main(String[] args) throws IOException {
+        BufferedReader teclado = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter out = new BufferedWriter(new OutputStreamWriter(System.out));
+        
+        while(true){
+            String linha = teclado.readLine();
+            if(linha==null || linha.equals(" ")){
+                break;
+            }
+        
+        for(int i=0; i<=6; i++){
+            
+            int n = Integer.parseInt(linha);
+            
+            int y;
+            
+            y = n % 1;
+            
+            if(y==0 || y>0){
+                
+                out.write(y+1);
+            }
+            }
+        }
+        
+    }
+    
+}
