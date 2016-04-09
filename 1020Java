@@ -1,0 +1,24 @@
+import java.util.*;
+
+public class Main {
+
+    
+    public static void main(String[] args) {
+        Scanner input;
+        input = new Scanner(System.in);
+        
+        int n = input.nextInt();
+        int ano;
+        int mes;
+        int dias;
+        
+        ano = n/365;
+        mes = n%365/30;
+        dias = n%365%30;
+        
+        System.out.println(ano + " ano(s)");
+        System.out.println(mes + " mes(es)");
+        System.out.println(dias + " dia(s)");
+    }
+    
+}
