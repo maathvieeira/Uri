@@ -1,0 +1,23 @@
+import java.util.*;
+
+public class Main {
+
+    
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+        
+        while(true){
+            String senha = teclado.nextLine();
+            
+            int senha2 = Integer.parseInt(senha);
+            
+            if(senha.equals("2002")){
+                System.out.printf("Acesso Permitido\n");
+                break;
+            }else{
+                System.out.printf("Senha Invalida\n");
+            }
+        }
+    }
+    
+}
