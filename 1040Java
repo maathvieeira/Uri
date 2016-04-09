@@ -1,0 +1,49 @@
+import java.util.*;
+
+public class Main {
+
+    
+    public static void main(String[] args) {
+        Scanner input;
+        input = new Scanner(System.in);
+        
+        //you can use all DOUBLE
+        //você pode usar tudo DOUBLE
+        
+        float N1 = input.nextFloat();
+        float N2 = input.nextFloat();
+        float N3 = input.nextFloat();
+        float N4 = input.nextFloat();
+        double calc;
+        double calc2;
+        double calc3;
+        double exam;
+        
+        calc = (N1*2 + N2*3 + N3*4 + N4*1)/(10.0);
+        
+        if(calc >= 7.0){
+            System.out.printf("Media: %.1f\n",calc);
+            System.out.println("Aluno aprovado.");
+        } else if (calc <= 5.0){
+            System.out.printf("Media: %.1f\n",calc);
+            System.out.println("Aluno reprovado.");
+        } else if (calc >= 5.0 && calc <= 6.9){
+            System.out.printf("Media: %.1f\n",calc);
+            System.out.println("Aluno em exame.");
+                exam = input.nextDouble();
+                calc2 = (exam + calc)/2.0;
+                if(calc2 >= 5.0){
+                    System.out.printf("Nota do exame: %.1f\n",exam);
+                    System.out.println("Aluno aprovado.");
+                    System.out.printf("Media final: %.1f\n",calc2);
+            } else if(calc <= 4.9 ){
+                System.out.printf("Nota do exame: %.1f\n",exam);
+                System.out.println("Aluno reprovado.");
+                System.out.printf("Media final: %.1f\n",calc2);
+            }
+                
+        }   
+        
+    }
+    
+}
