@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        int n, ced100, ced50, ced20, ced10, ced5, ced2, ced1;
+
+        Scanner teclado = new Scanner(System.in);
+
+        n = teclado.nextInt();
+
+        ced100 = n / 100;
+        ced50 = (n-ced100*100)/50;
+        ced20 = (n-ced100*100-ced50*50)/20;;
+        ced10 = (n-ced100*100-ced50*50-ced20*20)/10;
+        ced5 =  (n-ced100*100-ced50*50-ced20*20-ced10*10)/5;
+        ced2 = (n-ced100*100-ced50*50-ced20*20-ced10*10-ced5*5)/2;
+        ced1 = n-ced100*100-ced50*50-ced20*20-ced10*10-ced5*5-ced2*2;
+
+        System.out.printf("%d\n",n);
+        System.out.printf("%d nota(s) de R$ 100,00\n", ced100);
+        System.out.printf("%d nota(s) de R$ 50,00\n", ced50);
+        System.out.printf("%d nota(s) de R$ 20,00\n", ced20);
+        System.out.printf("%d nota(s) de R$ 10,00\n", ced10);
+        System.out.printf("%d nota(s) de R$ 5,00\n", ced5);
+        System.out.printf("%d nota(s) de R$ 2,00\n", ced2);
+        System.out.printf("%d nota(s) de R$ 1,00\n", ced1);
+
+    }
+
+}
