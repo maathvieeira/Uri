@@ -1,0 +1,25 @@
+import java.util.*;
+
+public class Main {
+
+    
+    public static void main(String[] args){
+        Scanner teclado = new Scanner(System.in);
+        
+        float A = teclado.nextFloat();
+        float B = teclado.nextFloat();
+        float C = teclado.nextFloat();
+        float calc;
+        float calc2;
+              
+        
+        if(A+B>C && B+C>A && A+C>B){
+            calc = A + B + C;
+            System.out.printf("Perimetro = %.1f\n",calc);
+        }else{
+            calc2 = ((A+B)*C)/2;
+            System.out.printf("Area = %.1f\n",calc2);
+        }
+    }
+    
+}
