@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+
+        String TipoAnimal1 = teclado.nextLine();
+        String TipoAnimal2 = teclado.nextLine();
+        String TipoAnimal3 = teclado.nextLine();
+
+        if (TipoAnimal1.equals("vertebrado")) {
+            if (TipoAnimal2.equals("ave")) {
+                if (TipoAnimal3.equals("carnivoro")) {
+                    System.out.println("aguia");
+                } else if (TipoAnimal3.equals("onivoro")) {
+                    System.out.println("pomba");
+                }
+            } else if (TipoAnimal2.equals("mamifero")) {
+                if (TipoAnimal3.equals("onivoro")) {
+                    System.out.println("homem");
+                } else if (TipoAnimal3.equals("herbivoro")) {
+                    System.out.println("vaca");
+                }
+            }
+        } else if (TipoAnimal1.equals("invertebrado")) {
+            if (TipoAnimal2.equals("inseto")) {
+                if (TipoAnimal3.equals("hematofago")) {
+                    System.out.println("pulga");
+                } else if (TipoAnimal3.equals("herbivoro")) {
+                    System.out.println("lagarta");
+                }
+            } else if (TipoAnimal2.equals("anelideo")) {
+                if (TipoAnimal3.equals("hematofago")) {
+                    System.out.println("sanguessuga");
+                } else if (TipoAnimal3.equals("onivoro")) {
+                    System.out.println("minhoca");
+                }
+            }
+        }
+
+    }
+}
