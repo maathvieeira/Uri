@@ -1,0 +1,23 @@
+import java.util.*;
+
+public class Main {
+
+   
+    public static void main(String[] args) {
+        Scanner input;
+        input = new Scanner(System.in);
+    
+        int n = input.nextInt();
+        int h;
+        int m;
+        int s;
+
+        h = n/3600;
+        m = n%3600/60;
+        s = n%60;
+        
+        System.out.println(h+":"+m+":"+s);
+        
+    }
+    
+}
