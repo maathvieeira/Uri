@@ -1,0 +1,45 @@
+import java.io.*;
+
+public class Main {
+
+
+
+public static void main(String[] args) throws IOException {
+        
+        BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter saida = new BufferedWriter(new OutputStreamWriter(System.out));
+        
+        while(true){
+            int parte1;
+            int parte2;
+            int faltando = 0;
+            int volta=1;
+            String numeros = entrada.readLine();
+
+            
+            if(numeros == null || numeros.equals(" ")){
+                break;
+            }
+            
+            String[] partes = numeros.split(" ");
+            parte1 = Integer.parseInt(partes[0]);
+            parte2 = Integer.parseInt(partes[1]);
+            //int dif = (parte2-parte1);
+            //int volta =(parte2/dif)+1;
+            while(faltando<parte1){
+                faltando = volta*(parte2-parte1);
+                volta++;
+            }
+            
+            
+            saida.write((volta)+"\n");
+            
+            saida.flush();
+            
+        }
+        
+        
+    }
+    
+}
+
