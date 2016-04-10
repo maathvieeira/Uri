@@ -1,0 +1,29 @@
+import java.io.*;
+
+public class Main {
+    
+
+    public static void main(String[] args) throws IOException {
+        
+            BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
+            BufferedWriter saida = new BufferedWriter(new OutputStreamWriter(System.out));
+            int parte1 = 0;
+            int parte2 = 0;
+
+
+            //String linha = entrada.readLine();
+
+            String numeros = entrada.readLine();
+            String[] partes = numeros.split(" ");
+            parte1 = Integer.parseInt(partes[0]);
+            parte2 = Integer.parseInt(partes[1]);
+            
+            if (parte1>parte2){
+                System.out.print(parte1+"\n");
+            } else if (parte2>parte1) {
+                System.out.print(parte2+"\n");
+            } else if (parte1==parte2){
+                System.out.print(parte1+"\n");
+            }
+}
+}
