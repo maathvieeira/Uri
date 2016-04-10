@@ -1,0 +1,16 @@
+import java.util.*;
+
+public class Main {
+    
+ public static void main(String[] args) { 
+     
+         Scanner entrada = new Scanner(System.in);
+     
+        String decimal = entrada.nextLine();  
+        String hexadecimal = Integer.toHexString(Integer.parseInt(decimal));  
+        String up = hexadecimal.toUpperCase();
+        
+        System.out.print(up+"\n");  
+    }  
+
+}
