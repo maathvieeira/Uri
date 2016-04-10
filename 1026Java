@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+       
+          long a, b, resultado;
+      while (entrada.hasNextLong()) {
+         a = entrada.nextLong();
+         b = entrada.nextLong();
+         resultado = a ^ b;
+         System.out.printf("%d\n", resultado);
+      }
+   }
+
+}
