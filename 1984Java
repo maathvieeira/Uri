@@ -1,0 +1,16 @@
+import java.util.*;
+
+public class Main {
+    
+	public static void main(String[] args) {
+            
+		Scanner entrada = new Scanner(System.in);
+	
+                
+                String reverso = entrada.nextLine();
+		
+                String reverso2 = new StringBuilder(reverso).reverse().toString();
+                
+                System.out.print(reverso2+"\n");
+	}
+}
